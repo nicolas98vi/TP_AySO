@@ -1,0 +1,81 @@
+hostnamectl status
+whoami
+pwd
+sudo apt update
+sudo apt install -y tree
+tree
+hostnamectl hostname
+sudo mandb
+apropos networking
+cat > archivo.txt
+cat archive.txt
+cat archivo.txt
+exit
+ssh-keygen
+cat $HOME/.shh/*.pub
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:nicolas98vi/TP_AySO.git
+cd TP_AySO
+pwd
+ls -l
+man grep
+grep VAGRANT /etc/shadow
+grep vagrant /etc/shadow
+grep -i Vagrant /etc/shadow
+sudo -i
+sudo grep -i vagrant /etc/shadow | awk -F: '{print $2}' > pass_usuario.txt
+echo "Usuario=$(whoaami)">>datos_usuario.txt
+echo "Usuario=$(whoami)">>datos_usuario.t
+echo "Usuario=$(whoami)">>datos_usuario.txt
+rm datos_usuario.t
+whoami
+cat pass_usuario.txt
+cat datos_usuario.txt
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt
+git status
+git add .
+git config --global user.email "nicrost98@hotmail.com"
+git config --global user.name "nicolas98vi"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+ls -la /home/vagrant > permisos.txt
+echo "ls -la /home/vagrant" >> permisos.txt
+git add .
+git commit -m "ADD: añadiendo archivo permisos"
+git status
+grep -v "^root:" /etc/passwd | awk -F: '{print $1}' | sort | head -n 10 > lista_ordenada
+cat lista_ordenada
+git add .
+git commit -m "ADD: Listado de usuarios ordenados"
+git status
+cat << 'EQF' >> README.md
+TP de Arquitectura y Sistemas Operativos
+EQF
+
+cat README.md
+git add README.md
+git commit -m "ADD: Modificado el README.md con la descripcion del repo" 
+git push
+git status
+git log --oneline
+cat << 'EQF' >> README.md
+Alumno: Nicolas Manuel Viñas
+Divicion: 111
+Turno: Mañana
+EQF
+
+cat README.md
+git add README.md
+git commit -m "docs: agregar informacion del alumno al README"
+git push
+mkdir -p /home/vagrant/universidad/{alumnos/legajos{1..10},profesores/legajos{1..5}}
+tree /home/vagrant/universidad/
+echo 'mkdir -p /home/vagrant/universidad/{alumnos/legajos{1..10},profesores/legajos{1..5}}' > script_dir.sh
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
